@@ -35,6 +35,7 @@ dependencies:
   - platformdirs
   - pyarrow
   - pycountry
+  - python-dotenv
   - pyyaml
   - requests
   - schema

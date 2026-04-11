@@ -4,7 +4,7 @@ Run these materials after completing Day 2 in the same `lca-course` environment 
 
 Before starting Day 3, make sure that:
 - `paris-lca-course-2026` contains `ecoinvent-3.12-cutoff`
-- you know the course `premise` key, `tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo=`
+- the repo-root `.env` file is present, ideally with `IAM_FILES_KEY`, `ECOINVENT_USERNAME`, and `ECOINVENT_PASSWORD`
 - you are ready to generate and compare REMIND-EU scenario databases
 
 Core material:
@@ -16,5 +16,5 @@ Core material:
 5. `AB-02 Activity Browser Part II handout.md`
 
 The Day 3 sequence starts with a one-hour introduction lecture, then moves into database generation in Brightway and datapackage export for optional `trails` work.
-The key is included directly in the Premise notebooks, and can also be set via `IAM_FILES_KEY` if preferred.
+The Premise notebooks load the repo-root `.env` file automatically with `python-dotenv`, and still fall back to the embedded course key if `IAM_FILES_KEY` is absent.
 The Activity Browser handout then focuses on scenario, year, and technology comparisons in the GUI.

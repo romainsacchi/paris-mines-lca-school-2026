@@ -58,14 +58,15 @@ Important constraints:
 - Participants should bring valid `ecoinvent` credentials for the helper import workflow.
 - Course `premise` IAM decryption key: `tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo=`
 
-If you want to configure the key once in your local environment before the course:
+Create a repo-root `.env` file, or start from `.env.example`, with:
 
 ```bash
-conda activate lca-course
-conda env config vars set IAM_FILES_KEY="tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo="
-conda deactivate
-conda activate lca-course
+IAM_FILES_KEY=tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo=
+ECOINVENT_USERNAME=<your ecoinvent username>
+ECOINVENT_PASSWORD=<your ecoinvent password>
 ```
+
+The Day 2, Day 3, and optional Day 4 notebooks load this file automatically with `python-dotenv`.
 
 BAFU reference page:
 - https://nexus.openlca.org/database/BAFU

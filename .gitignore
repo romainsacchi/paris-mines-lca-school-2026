@@ -2,6 +2,7 @@
 .idea/
 .ipynb_checkpoints/
 __pycache__/
+.env
 
 # Generated course outputs
 export/

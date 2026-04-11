@@ -17,6 +17,7 @@ If you get stuck, contact:
 - You need valid `ecoinvent` credentials for the Day 2 import and the Day 3 `premise` work.
 - The BAFU workbook used in Day 1 is already bundled at `data/lci-bafu.xlsx`.
 - The course `premise` IAM decryption key is `tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo=`.
+- You will create a repo-root `.env` file later with `IAM_FILES_KEY`, `ECOINVENT_USERNAME`, and `ECOINVENT_PASSWORD`.
 
 ## What these tools are for
 
@@ -126,27 +127,22 @@ Activate in the same shell:
 conda activate lca-course
 ```
 
-## 5) Configure the `premise` IAM key locally
+## 5) Create a repo-root `.env` file
 
-The Day 3 `premise` notebooks expect an environment variable named `IAM_FILES_KEY`.
-The notebooks now also include the course key directly, but setting it once in your environment keeps the workflow cleaner.
+If you are still in `envs/`, go back to the repository root first.
 
-Recommended approach:
-
-```bash
-conda activate lca-course
-conda env config vars set IAM_FILES_KEY="tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo="
-conda deactivate
-conda activate lca-course
-```
-
-Optional convenience variables for the `ecoinvent` helper import:
+Create a file named `.env` in the repository root with:
 
 ```bash
-conda env config vars set EI_USERNAME="<your ecoinvent username>"
+IAM_FILES_KEY=tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo=
+ECOINVENT_USERNAME=<your ecoinvent username>
+ECOINVENT_PASSWORD=<your ecoinvent password>
 ```
 
-You can enter the `ecoinvent` password interactively in the notebook, or store it locally in the same way if you prefer.
+You can also start from `.env.example`.
+
+The Day 2, Day 3, and optional Day 4 notebooks load this file automatically with `python-dotenv`.
+The `.env` file is ignored by Git and should stay local.
 
 ## 6) Run quick import checks
 
