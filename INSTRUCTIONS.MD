@@ -80,11 +80,9 @@ You can use GitHub Desktop or the terminal. Terminal example:
 ```bash
 mkdir GitHub
 cd GitHub
-git clone https://github.com/romainsacchi/paris-mines-lca-school-2026.git paris-mines-lca-course-2026
-cd paris-mines-lca-course-2026
+git clone https://github.com/romainsacchi/paris-mines-lca-school-2026.git
+cd paris-mines-lca-school-2026
 ```
-
-The clone command above keeps the GitHub repository slug while giving the local folder the course-friendly name `paris-mines-lca-course-2026`.
 
 ## 3) Create the course environment (`lca-course`)
 

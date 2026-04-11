@@ -29,13 +29,14 @@ The focus is on advanced analysis features rather than on notebook work.
 4. Launch a Monte Carlo run on a simple product system.
 5. Introduce GSA and discuss when it is worth using.
 
-## Screenshot placeholders
+## Optional instructor visuals
 
-- Add Bernhard's project-selection screenshot here.
-- Add Bernhard's parameterisation screenshot here.
-- Add Bernhard's Monte Carlo screenshot here.
-- Add Bernhard's GSA screenshot here.
+- project selection and database list
+- parameter editing view
+- Monte Carlo setup dialog
+- GSA view or export screen
 
 ## Notes
 
+- This handout is usable without screenshots; add visuals only if they improve the live walkthrough.
 - Keep a short list of activities or product systems worth revisiting on Day 3 after the `premise` databases are generated.

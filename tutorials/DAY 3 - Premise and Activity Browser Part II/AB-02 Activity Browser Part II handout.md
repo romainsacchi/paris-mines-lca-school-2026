@@ -28,13 +28,14 @@ The focus is on comparing scenarios, years, and technologies in the GUI.
 4. Focus on an electricity activity and inspect how suppliers or impacts change.
 5. Export one figure or table for discussion with the group.
 
-## Screenshot placeholders
+## Optional instructor visuals
 
-- Add Bernhard's database-comparison screenshot here.
-- Add Bernhard's year-comparison screenshot here.
-- Add Bernhard's technology-comparison screenshot here.
-- Add Bernhard's export screenshot here.
+- database comparison view
+- year comparison view
+- technology comparison view
+- figure or table export view
 
 ## Notes
 
+- This handout is usable without screenshots; add visuals only if they improve the live walkthrough.
 - Keep the comparison examples aligned with the Day 3 notebook naming convention so that participants can move easily between the notebook and GUI views.
