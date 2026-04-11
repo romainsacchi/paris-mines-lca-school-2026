@@ -56,7 +56,16 @@ The course uses two database tracks:
 Important constraints:
 - `ecoinvent` is not included in this repository.
 - Participants should bring valid `ecoinvent` credentials for the helper import workflow.
-- The `premise` IAM decryption key will be shared separately by the instructor and should be configured locally, not committed into the repository.
+- Course `premise` IAM decryption key: `tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo=`
+
+If you want to configure the key once in your local environment before the course:
+
+```bash
+conda activate lca-course
+conda env config vars set IAM_FILES_KEY="tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo="
+conda deactivate
+conda activate lca-course
+```
 
 BAFU reference page:
 - https://nexus.openlca.org/database/BAFU
@@ -75,11 +84,13 @@ BAFU reference page:
 ## Recommended Workflow
 
 Before the course:
+
 1. Follow [INSTRUCTIONS.MD](INSTRUCTIONS.MD).
 2. Create and activate the `lca-course` conda environment.
 3. Run [tutorials/00_SETUP/00 - Setup and First Checks.ipynb](tutorials/00_SETUP/00%20-%20Setup%20and%20First%20Checks.ipynb).
 
 During the course:
+
 4. Work through Day 1, Day 2, Day 3, then Day 4 in the order shown in [SCHEDULE.MD](SCHEDULE.MD).
 5. Keep using the same `lca-course` environment and the same Brightway project, `paris-lca-course-2026`.
 
@@ -94,7 +105,7 @@ Both install the same shared `lca-course` environment used for notebooks and `Ac
 ## Teaching Staff
 
 - [Romain Sacchi](mailto:romain.sacchi@psi.ch), main instructor for `brightway`, `premise`, `edges`, and `trails`
-- Bernhard Steubing, instructor for the `Activity Browser` modules
+- [Bernhard Steubing](mailto:b.r.p.steubing@cml.leidenuniv.nl), instructor for the `Activity Browser` modules
 - Format: in-person lectures and hands-on workshops
 - Location: Mines Paris - PSL, Paris, France
 

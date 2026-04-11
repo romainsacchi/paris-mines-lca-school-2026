@@ -1,0 +1,3 @@
+commodity,supplier_name,supplier_location,consumer_location,value,weight,rows_for_commodity,rank_desc_within_commodity,median_value_for_commodity,p95_value_for_commodity,p99_value_for_commodity,max_value_for_commodity,ratio_to_median,ratio_to_p95,ratio_to_p99,is_top_value_for_commodity,flag_abnormally_high
+iron,iron production,GLO,GLO,14.11880786482608,0.4209768345803022,864,1,2.4859476474855658e-05,0.07604206158148633,0.7679538416658596,14.11880786482608,567944.6982363717,185.67102957481538,18.384969380710828,True,True
+phosphate,phosphate,GLO,GLO,41.87881946811029,0.3296806535869837,765,3,0.0003287460039873756,0.7063852363069247,8.047787951341993,22677.74382497607,127389.5924518021,59.286091095360774,5.20376775845925,False,True

@@ -16,7 +16,7 @@ If you get stuck, contact:
 - A stable internet connection is needed to install Git, Miniforge, and the packages in the `lca-course` environment.
 - You need valid `ecoinvent` credentials for the Day 2 import and the Day 3 `premise` work.
 - The BAFU workbook used in Day 1 is already bundled at `data/lci-bafu.xlsx`.
-- The `premise` IAM decryption key will be shared separately by the instructor. Do not commit it into the repository.
+- The course `premise` IAM decryption key is `tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo=`.
 
 ## What these tools are for
 
@@ -127,13 +127,13 @@ conda activate lca-course
 ## 5) Configure the `premise` IAM key locally
 
 The Day 3 `premise` notebooks expect an environment variable named `IAM_FILES_KEY`.
-The value will be shared separately by the instructor.
+The notebooks now also include the course key directly, but setting it once in your environment keeps the workflow cleaner.
 
 Recommended approach:
 
 ```bash
 conda activate lca-course
-conda env config vars set IAM_FILES_KEY="<value provided by the instructor>"
+conda env config vars set IAM_FILES_KEY="tUePmX_S5B8ieZkkM7WUU2CnO8SmShwmAeWK9x2rTFo="
 conda deactivate
 conda activate lca-course
 ```

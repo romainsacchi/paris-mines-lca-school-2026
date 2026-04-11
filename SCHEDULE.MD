@@ -92,8 +92,8 @@ Premise readiness checks and scenario framing
 - [D3-01 Premise readiness checks and scenario framing](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-01%20Premise%20readiness%20checks%20and%20scenario%20framing.ipynb)
 
 ### 10:00 - 11:00
-Scenario design, naming convention, and workflow planning
-- [D3-01 Premise readiness checks and scenario framing](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-01%20Premise%20readiness%20checks%20and%20scenario%20framing.ipynb)
+Premise introduction lecture: IAMs, scenarios, and prospective LCA workflow
+- [paris_premise_intro_06_05_2026.pdf](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/paris_premise_intro_06_05_2026.pdf)
 
 ### 11:00 - 13:00
 Generate prospective databases with `premise`
