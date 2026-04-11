@@ -23,7 +23,11 @@ If you get stuck, contact:
 - `Git`: downloads and updates this course repository.
 - `Miniforge` / `conda`: installs Python packages in an isolated environment.
 - `Jupyter Lab`: runs the tutorial notebooks.
-- `Activity Browser`: is installed inside the same course environment.
+- `brightway`: is the main Python framework used in the course for LCA modeling and calculation.
+- `Activity Browser`: is a graphical user interface for `brightway`, installed inside the same course environment.
+- `premise`: generates prospective LCI databases from IAM scenarios.
+- `edges`: runs exchange-based and regionalized LCIA workflows.
+- `trails`: supports the optional dynamic and temporal LCA examples.
 
 ## If you are new to Python
 
