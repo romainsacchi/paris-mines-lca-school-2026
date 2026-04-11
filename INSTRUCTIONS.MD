@@ -153,10 +153,10 @@ python --version
 python -c "import bw2data, bw2calc, bw2io, premise; print('Core imports: OK')"
 ```
 
-If you want to check the GUI package too:
+If you want to check `activity browser` too:
 
 ```bash
-python -c "import activity_browser; print('Activity Browser import: OK')"
+activity-browser
 ```
 
 ### Apple Silicon note about the sparse solver warning
