@@ -1,144 +1,103 @@
-# Regionalised LCIA Course (Barcelona, May 27-29, 2026)
+# Doctoral Training: LCA with Brightway2.5, Premise and Edges (Paris, May 4-7, 2026)
 
-![Sagrada Familia in Barcelona](_images/sagrada-familia.jpg)
+![Mines Paris - PSL logo](https://www.minesparis.psl.eu/wp-content/uploads/2024/02/Logo-Mines-Paris-PSL-Bloc-Marque-Bleu-VF.png)
 
 ## Course Overview
 
-Welcome! This repository contains all material for the 3-day course:
-**Regionalised LCIA for Beginner and Intermediate `brightway` users**.
+This repository contains the teaching material for a 4-day in-person doctoral training held in Paris from May 4 to May 7, 2026 for doctoral students and researchers from the Laboratoire Recherche Environnement, Mines Paris - PSL.
 
-The core course focuses on:
+The course combines:
 - `brightway` 2.5 foundations
-- Regionalised LCIA with `edges`
-- Scenario-based LCIA
-- Inventory flow assessment
+- `Activity Browser` in two guided modules
+- `premise` for prospective LCA database generation
+- `edges` for regionalised LCIA
+- optional `trails` material for dynamic LCA if group progress allows
 
-The format mixes short lectures and hands-on notebook sessions.
-All material remains available after the course.
+The format mixes short lectures, notebook work, and guided GUI handouts.
 
 ## Quick Links
 
 - [INSTRUCTIONS.MD](INSTRUCTIONS.MD): pre-arrival setup and installation steps
-- [SCHEDULE.MD](SCHEDULE.MD): day-by-day agenda with notebook mapping
+- [SCHEDULE.MD](SCHEDULE.MD): day-by-day agenda with notebook and handout mapping
 - [READING_MATERIAL.md](READING_MATERIAL.md): recommended pre-course reading
-- [HOME_ASSIGNMENT.md](HOME_ASSIGNMENT.md): optional post-course assignment
+- [tutorials/README.MD](tutorials/README.MD): tutorial index
 
 ## Learning Outcomes
 
-By the end of the course, participants will be able to:
-- Explain `brightway`'s architecture and matrix-based LCA computation flow.
-- Build and run LCA models in Python.
-- Perform uncertainty analysis and contribution analysis.
-- Import and analyze a national LCA inventory database from Excel, and understand how a similar import workflow applies to `ecoinvent`.
-- Run regionalised LCIA workflows with `edges`.
-- Implement scenario-based LCIA with parameterised characterization factors.
-- Perform inventory flow assessment and interpret supply-chain criticality signals.
+By the end of the course, participants should be able to:
+- explain `brightway`'s architecture and matrix-based computation flow
+- import and inspect foreground and background LCI data in Python
+- run LCA, contribution analysis, and uncertainty analysis in `brightway`
+- import `ecoinvent 3.12 cutoff` with the `bw2io` helper workflow
+- generate prospective databases with `premise` from REMIND-EU scenarios
+- compare scenarios, years, and technologies in `brightway` and `Activity Browser`
+- run compact regionalised LCIA workflows with `edges`
+- interpret inventory flow assessment and supply-risk style outputs
+- understand how optional `trails` workflows connect to a `premise` datapackage
 
-## Target Audience
+## Audience And Prerequisites
 
-- LCA practitioners with beginner or intermediate Python skills.
-- No prior `brightway` experience required.
-- Participants should already know core LCA concepts.
+- doctoral students and researchers with a solid understanding of LCA concepts
+- basic Python and Jupyter familiarity
+- no prior `brightway` experience required
 
-
----
-**NOTE**
-
-If you are completely new to Python, we recommend spending a few hours on a beginner tutorial before the course.
-We suggest the University of Helsinki's online tutorial, which requires no installation:
+If you are rusty with Python, spend a few hours on a lightweight refresher before the course:
 - https://programming-25.mooc.fi/part-1/1-getting-started
 
 For this course, the `Introduction to Programming` section is sufficient.
 
----
+## Databases And Licensing
 
-## Database Used in the Course
+The course uses two database tracks:
 
-This course uses the **BAFU:2025** LCA database (open access), provided by the
-Swiss Federal Office for the Environment (FOEN) as a `brightway`-compatible Excel inventory file.
+- `data/lci-bafu.xlsx`: bundled open BAFU workbook used for the Day 1 `brightway` module and the Day 4 `edges` examples
+- `ecoinvent 3.12 cutoff`: required for the Day 2 `Activity Browser`, Day 3 `premise`, and optional Day 4 `trails` workflows
 
-The Brightway-compatible Excel file used during the course is already included in this repository:
-- `data/lci-bafu.xlsx`
+Important constraints:
+- `ecoinvent` is not included in this repository.
+- Participants should bring valid `ecoinvent` credentials for the helper import workflow.
+- The `premise` IAM decryption key will be shared separately by the instructor and should be configured locally, not committed into the repository.
 
-Participants do **not** need to download the database before the course.
-On Day 1, participants will import the bundled BAFU file into `brightway`.
-
-We will also explain how to import the `ecoinvent` LCA database for participants who work with it.
-However, `ecoinvent` is **not** included in this repository and is **not** used in the course exercises because of licensing constraints.
-
-Database page:
-- https://nexus.openlca.org/database/BAFU (reference and terms-of-use page)
-
-## Terms of Use (BAFU:2025)
-
-The Swiss Federal Administration provides its eco-inventory data free of charge and with few restrictions.
-Anyone wishing to use the data must first accept the terms of use.
-
-Requirements:
-- The data may not be resold.
-- The source of the data must be cited as:
-  `Database of the Swiss Federal Administration, FOEN:20XY, Federal Office for the Environment, 2025.`
-- The Swiss Federal Administration cannot be held responsible for the published data.
-- It is recommended that specialists be consulted for the implementation of life cycle assessments and the analysis of the results.
+BAFU reference page:
+- https://nexus.openlca.org/database/BAFU
 
 ## Repository Structure
 
-- `data/`: bundled course data, including the BAFU Excel inventory used on Day 1
+- `data/`: bundled course data, including the BAFU workbook
 - [tutorials/00_SETUP/](tutorials/00_SETUP/README.MD): pre-course setup and first checks
-- [tutorials/DAY 1/](tutorials/DAY%201/README.MD): `brightway` foundations + BAFU import + `ecoinvent` import overview
-- [tutorials/DAY 2/](tutorials/DAY%202/README.MD): regionalised LCIA with `edges`
-- [tutorials/DAY 3/](tutorials/DAY%203/README.MD): scenario LCIA and inventory flow assessment
+- [tutorials/DAY 1 - Brightway Foundations/](tutorials/DAY%201%20-%20Brightway%20Foundations/README.MD): Python/Jupyter refresher plus core `brightway` work
+- [tutorials/DAY 2 - Brightway and Activity Browser Part I/](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/README.MD): `ecoinvent` import and the first `Activity Browser` block
+- [tutorials/DAY 3 - Premise and Activity Browser Part II/](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/README.MD): `premise` and scenario comparison
+- [tutorials/DAY 4 - Edges and Trails/](tutorials/DAY%204%20-%20Edges%20and%20Trails/README.MD): compressed `edges` sequence plus optional `trails`
+- [tutorials/OPTIONAL/](tutorials/OPTIONAL/README.MD): advanced or reference notebooks not in the core path
 - [READING_MATERIAL.md](READING_MATERIAL.md): suggested background reading
-- [HOME_ASSIGNMENT.md](HOME_ASSIGNMENT.md): optional post-course assignment
-
-## Day-by-Day Notebooks
-
-See the detailed agenda with notebook mapping in [SCHEDULE.MD](SCHEDULE.MD).
 
 ## Recommended Workflow
 
-Participants should work through the repository in this order:
-
-Before the course starts:
+Before the course:
 1. Follow [INSTRUCTIONS.MD](INSTRUCTIONS.MD).
-2. Run `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`.
+2. Create and activate the `lca-course` conda environment.
+3. Run [tutorials/00_SETUP/00 - Setup and First Checks.ipynb](tutorials/00_SETUP/00%20-%20Setup%20and%20First%20Checks.ipynb).
 
 During the course:
-3. Complete Day 1, then Day 2, then Day 3 in the order shown in [SCHEDULE.MD](SCHEDULE.MD).
-4. Keep using the same `bw` conda environment and the same Brightway project created on Day 1, because later notebooks build on that state.
-
-## Before the Course
-
-Follow [INSTRUCTIONS.MD](INSTRUCTIONS.MD) and complete:
-- `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`
-
-If you are new to Python, spend a few hours on a beginner tutorial before arrival.
-We recommend the University of Helsinki online tutorial, which requires no installation:
-- https://programming-25.mooc.fi/part-1/1-getting-started
-
-For our purposes, the `Introduction to Programming` section is sufficient.
-You do not need the `Advanced Course in Programming` section.
-
-No database download is required before arrival; the BAFU workbook is already included under `data/`.
-Internet access is still needed for software installation, package downloads, and the first download of the prepared Brightway project archive used in Day 1.
-
-Also, check the [pre-course reading material](READING_MATERIAL.md).
-
+4. Work through Day 1, Day 2, Day 3, then Day 4 in the order shown in [SCHEDULE.MD](SCHEDULE.MD).
+5. Keep using the same `lca-course` environment and the same Brightway project, `paris-lca-course-2026`.
 
 ## Software
 
 Core environment files are in `envs/`:
-- `bw_env_win64.yaml` (for Windows computers) or `bw_env_osxARM.yaml` (for Mac computers with Apple Silicon chips)
+- `lca_course_osxARM.yaml` for macOS Apple Silicon
+- `lca_course_win64.yaml` for Windows
+
+Both install the same shared `lca-course` environment used for notebooks and `Activity Browser`.
 
 ## Teaching Staff
 
-- Instructors: 
-  - [Romain Sacchi](mailto:romain.sacchi@psi.ch), Paul Scherrer Institute (PSI)
-  - [Miguel Astudillo](mailto:miguel.astudillo@2-0-LCA.com), 2-0 LCA
-- Location: ILCA, Av del Portal de l'Àngel, 36, Ciutat Vella, 08002 Barcelona, Spain
-- Format: lectures + hands-on workshops
+- [Romain Sacchi](mailto:romain.sacchi@psi.ch), main instructor for `brightway`, `premise`, `edges`, and `trails`
+- Bernhard Steubing, instructor for the `Activity Browser` modules
+- Format: in-person lectures and hands-on workshops
+- Location: Mines Paris - PSL, Paris, France
 
 ## License
 
-Unless otherwise specified, material in this repository is licensed under
-BSD 3-Clause. See [LICENSE.md](LICENSE.md).
+Unless otherwise specified, material in this repository is licensed under BSD 3-Clause. See [LICENSE.md](LICENSE.md).

@@ -328,7 +328,7 @@ Answer: DAY 3 - Premise/Activity Browser part II/ and DAY 4 - Edges and Trails/ 
 
 57. Should generated outputs stay out of the repository by default?
 
-Answer:
+Answer: yes
 
 58. Should notebooks include answer cells/templates, or should solutions be hidden/separate?
 
@@ -350,17 +350,93 @@ Answer: The most important learning outcome for participants after four days is 
 
 62. What should be avoided because it is too advanced, too fragile, or not relevant for this audience?
 
-Answer:
+Answer: n/a
 
 63. What should absolutely be preserved from the Barcelona course?
 
-Answer:
+Answer: n/a
 
 64. What deadline should I work toward for a first adapted draft?
 
-Answer:
+Answer: a week from now
 
 65. Any other constraints or preferences?
 
-Answer:
+Answer: no
 
+## 13. Additional Questions Needed To Repurpose This Repository
+
+66. What should the new repository slug, local folder name, and default Brightway project name be?
+
+Answer: the repository slug should still be ``paris-mines-lca-school-2026``, the local folder name can be `paris-mines-lca-course-2026`, and the default Brightway project name can be `paris-lca-course-2026`.
+
+67. Should I physically rename the tutorial folders and notebook filenames to match the new 4-day Paris structure, or keep the current filenames/folders and only update the README and schedule?
+
+Answer: physically rename the tutorial folders and notebook filenames to match the new 4-day Paris structure
+
+68. Will this repository remain public on GitHub, or become private/internal to the course?
+
+Answer: this repository is private, but it will become public before the course, as we will need to share it with the participants. We can keep it private during the adaptation process, and then make it public once we have a first adapted draft ready for review.
+
+69. How should the Premise encryption key be handled in the repository?
+
+Possible options:
+
+- store it directly in an environment YAML file
+- document it in the setup instructions as a local environment variable to set manually
+- keep it entirely out of the repository and share it separately
+
+Answer: document it in the setup instructions as a local environment variable to set manually
+
+70. Can we assume all participants will have access to `ecoinvent 3.12 cutoff` by the course start? If access is mixed, what fallback should we plan for during the `Activity Browser`, `Premise`, and optional `Trails` modules?
+
+Answer: yes, we assume all participants will have access to `ecoinvent 3.12 cutoff` by the course start.
+
+71. For the optional `ecoinvent` import, what exact import route should the instructions target?
+
+Possible options:
+
+- participants import from local `ecoinvent` release files
+- participants log in through an `ecoinvent` helper interface
+- another workflow
+
+Answer: participants log in through bw2io's `ecoinvent` helper interface. an example si already given in the current `D1-04 First LCA from demand to score in Brightway.ipynb` notebook, and we can expand on it if needed.
+
+72. Linux is listed as a supported operating system. Should I add and maintain a Linux environment file and Linux-specific instructions, or is macOS Apple Silicon plus Windows enough for the first adapted draft?
+
+Answer: macOS Apple Silicon plus Windows is enough for the first adapted draft
+
+73. Which exact `Trails` notebooks/files under `/Users/romain/Github/trails/examples` should be brought into this repository, and where should they live in the new folder structure?
+
+Answer: we should use all three notebooks: 
+- `/Users/romain/GitHub/trails/examples/1. simple numerical example.ipynb`
+- `/Users/romain/GitHub/trails/examples/2.1. generate Trails data package.ipynb`
+- `/Users/romain/GitHub/trails/examples/2.2. premise and imported lci example.ipynb`
+
+74. Will Bernhard Steubing provide Activity Browser teaching material or screenshots, or should I draft the participant-facing handouts from scratch?
+
+Answer: Bernhard Steubing will provide material, which I will add later.
+
+75. To compress `Edges` into 0.5 day, which current notebooks should stay in the main path and which should become optional/reference material?
+
+Answer: The exchange-based characterization concept and the AWARE / biodiversity examples should stay in the main path, as they are fundamental to understanding Edges. The spatial matching and fallback logic, regionalized hydrogen pathways, and uncertainty in regionalized LCIA can be moved to optional/reference material, as they are more advanced topics that may not fit within the 0.5-day allocation.
+
+76. What should happen to `tutorials/DAY 3/D3-06 Capstone dual case study.ipynb` in the Paris version?
+
+Possible options:
+
+- adapt it into the main teaching path
+- move it to optional material
+- remove it
+
+Answer: remove it
+
+77. What should replace the current Barcelona-specific README visual identity and location references?
+
+Possible options:
+
+- use a Paris-specific image
+- use a Mines Paris - PSL image or logo
+- remove the cover image and keep the README text-only
+
+Answer: use a Mines Paris - PSL image

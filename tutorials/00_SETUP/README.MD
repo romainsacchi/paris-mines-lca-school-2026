@@ -1,14 +1,19 @@
-# Pre-course setup
+# Pre-Course Setup
 
 Run `00 - Setup and First Checks.ipynb` before Day 1.
 
-If you are completely new to Python, spend a few hours on a beginner tutorial before the course.
-We recommend the University of Helsinki's online tutorial, which requires no installation:
+The setup notebook verifies:
+- that the active kernel is the shared `lca-course` environment
+- that the core Python packages import correctly
+- that the bundled BAFU workbook is present
+
+If you are completely new to Python, spend a few hours on a beginner tutorial before the course:
 - https://programming-25.mooc.fi/part-1/1-getting-started
 
 For this course, the `Introduction to Programming` section is sufficient.
-You do not need the `Advanced Course in Programming` section.
 
-The course uses the BAFU:2025 inventory database as a `brightway`-compatible Excel file.
-It is already included in this repository as `data/lci-bafu.xlsx`.
-No download is required before Day 1.
+The course uses the BAFU:2025 inventory workbook as a bundled Day 1 asset:
+- `../../data/lci-bafu.xlsx`
+
+No separate BAFU download is required before the course.
+The `premise` IAM key and `ecoinvent` credentials are configured later through the steps in [INSTRUCTIONS.MD](../../INSTRUCTIONS.MD).
