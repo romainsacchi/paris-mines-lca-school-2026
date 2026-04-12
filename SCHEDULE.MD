@@ -88,29 +88,29 @@ Morning instructor: Romain Sacchi
 Afternoon instructor: Bernhard Steubing
 
 ### 09:00 - 10:00
-Premise readiness checks and scenario framing
-- [D3-01 Premise readiness checks and scenario framing](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-01%20Premise%20readiness%20checks%20and%20scenario%20framing.ipynb)
+Start generating prospective databases with `premise`
+- [D3-01 Generating prospective databases with premise](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-01%20Generating%20prospective%20databases%20with%20premise.ipynb)
 
 ### 10:00 - 11:00
 Premise introduction lecture: IAMs, scenarios, and prospective LCA workflow
 - [paris_premise_intro_06_05_2026.pdf](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/paris_premise_intro_06_05_2026.pdf)
 
 ### 11:00 - 13:00
-Generate prospective databases with `premise`
-- [D3-02 Generating prospective databases with premise](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-02%20Generating%20prospective%20databases%20with%20premise.ipynb)
+Continue `premise` generation, checks, and datapackage export
+- [D3-01 Generating prospective databases with premise](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-01%20Generating%20prospective%20databases%20with%20premise.ipynb)
 
 ### 13:00 - 15:00
 Lunch break
 
 ### 15:00 - 16:30
 Inspect and compare generated outputs in Brightway
-- [D3-03 Inspecting and comparing premise outputs in Brightway](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-03%20Inspecting%20and%20comparing%20premise%20outputs%20in%20Brightway.ipynb)
+- [D3-02 Inspecting and comparing premise outputs in Brightway](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-02%20Inspecting%20and%20comparing%20premise%20outputs%20in%20Brightway.ipynb)
 
 ### 16:30 - 17:00
 Coffee break
 
 ### 17:00 - 19:00
-Activity Browser Part II: compare scenarios, years, and technologies
+Activity Browser Part II: compare prospective scenarios
 - [AB-02 Activity Browser Part II handout](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/AB-02%20Activity%20Browser%20Part%20II%20handout.md)
 
 ## DAY 4 (Thursday, May 7, 2026) - Edges and Trails

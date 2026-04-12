@@ -9,12 +9,13 @@ Before starting Day 3, make sure that:
 
 Core material:
 
-1. `D3-01 Premise readiness checks and scenario framing.ipynb`
+1. `D3-01 Generating prospective databases with premise.ipynb`
 2. `paris_premise_intro_06_05_2026.pdf`
-3. `D3-02 Generating prospective databases with premise.ipynb`
-4. `D3-03 Inspecting and comparing premise outputs in Brightway.ipynb`
-5. `AB-02 Activity Browser Part II handout.md`
+3. `D3-02 Inspecting and comparing premise outputs in Brightway.ipynb`
+4. `AB-02 Activity Browser Part II handout.md`
 
-The Day 3 sequence starts with a one-hour introduction lecture, then moves into database generation in Brightway and datapackage export for optional `trails` work.
+The Day 3 sequence starts by launching the `premise` scenario databases in `D3-01`.
+While those long-running jobs execute, the one-hour introduction lecture covers IAMs, scenarios, and the prospective LCA workflow.
+The group then returns to `D3-01` for checks and export before moving into `D3-02` and the Activity Browser handout.
 The Premise notebooks load the repo-root `.env` file automatically with `python-dotenv`, and still fall back to the embedded course key if `IAM_FILES_KEY` is absent.
 The Activity Browser handout then focuses on scenario, year, and technology comparisons in the GUI.
