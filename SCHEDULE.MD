@@ -117,33 +117,37 @@ Activity Browser Part II: compare prospective scenarios
 
 Instructor: Romain Sacchi
 
-### 09:00 - 10:30
+### 09:00 - 10:00
 Exchange-based characterization and `edges` fundamentals
 - [D4-01 Edges fundamentals and exchange-based characterization](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-01%20Edges%20fundamentals%20and%20exchange-based%20characterization.ipynb)
+
+### 10:00 - 10:30
+Introduction to the `edges` workflow and API
+- [D4-02 Introduction to edges workflow and API](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-02%20Introduction%20to%20edges%20workflow%20and%20API.ipynb)
 
 ### 10:30 - 11:00
 Coffee break
 
 ### 11:00 - 13:00
 AWARE and biodiversity examples with regionalised methods
-- [D4-02 AWARE and biodiversity with regionalised methods](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-02%20AWARE%20and%20biodiversity%20with%20regionalised%20methods.ipynb)
+- [D4-03 AWARE and biodiversity with regionalised methods](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-03%20AWARE%20and%20biodiversity%20with%20regionalised%20methods.ipynb)
 
 ### 13:00 - 15:00
 Lunch break
 
 ### 15:00 - 16:00
 Inventory flow assessment I
-- [D4-03 Inventory flow assessment I - tracing intermediates](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-03%20Inventory%20flow%20assessment%20I%20-%20tracing%20intermediates.ipynb)
+- [D4-04 Inventory flow assessment I - tracing intermediates](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-04%20Inventory%20flow%20assessment%20I%20-%20tracing%20intermediates.ipynb)
 
 ### 16:00 - 16:15
 Coffee break
 
 ### 16:15 - 17:15
 Inventory flow assessment II
-- [D4-04 Inventory flow assessment II - criticality factors](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-04%20Inventory%20flow%20assessment%20II%20-%20criticality%20factors.ipynb)
+- [D4-05 Inventory flow assessment II - criticality factors](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-05%20Inventory%20flow%20assessment%20II%20-%20criticality%20factors.ipynb)
 
 ### 17:15 - 19:00
 Optional `trails` reserve block, if group progress allows
-- [D4-05 Optional Trails - simple numerical example](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-05%20Optional%20Trails%20-%20simple%20numerical%20example.ipynb)
-- [D4-06 Optional Trails - generate a data package from premise outputs](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-06%20Optional%20Trails%20-%20generate%20a%20data%20package%20from%20premise%20outputs.ipynb)
-- [D4-07 Optional Trails - premise and imported LCI example](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-07%20Optional%20Trails%20-%20premise%20and%20imported%20LCI%20example.ipynb)
+- [D4-06 Optional Trails - simple numerical example](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-06%20Optional%20Trails%20-%20simple%20numerical%20example.ipynb)
+- [D4-07 Optional Trails - generate a data package from premise outputs](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-07%20Optional%20Trails%20-%20generate%20a%20data%20package%20from%20premise%20outputs.ipynb)
+- [D4-08 Optional Trails - premise and imported LCI example](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-08%20Optional%20Trails%20-%20premise%20and%20imported%20LCI%20example.ipynb)
