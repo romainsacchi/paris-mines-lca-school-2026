@@ -44,11 +44,11 @@ dependencies:
   - fair
   - pyvis
   - scikit-umfpack
+  - premise
+  - edges
   - pip<26
   - setuptools<81
   - pip:
-      - git+https://github.com/romainsacchi/edges.git
-      - git+https://github.com/polca/premise.git
       - git+https://github.com/Laboratory-for-Energy-Systems-Analysis/trails.git
       - multifunctional
       - bw_simapro_csv
