@@ -1,6 +1,6 @@
 # Repository Guide For Agents
 
-This repository is course material for the 4-day Paris 2026 doctoral training on LCA with `brightway`, `premise`, `edges`, and optional `trails`.
+This repository is course material for the 4-day Paris 2026 doctoral training on LCA with `brightway`, `Activity Browser`, `premise`, `edges`, and optional `trails`.
 Most work here is content maintenance, not application development.
 
 ## What Lives Here

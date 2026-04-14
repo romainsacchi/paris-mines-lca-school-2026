@@ -1,4 +1,4 @@
-# Doctoral Training: LCA with Brightway2.5, Premise and Edges (Paris, May 4-7, 2026)
+# Doctoral Training: LCA with Brightway2.5, Activity Browser, Premise and Edges (Paris, May 4-7, 2026)
 
 ![Mines Paris - PSL logo](https://www.minesparis.psl.eu/wp-content/uploads/2024/02/Logo-Mines-Paris-PSL-Bloc-Marque-Bleu-VF.png)
 
@@ -77,7 +77,7 @@ BAFU reference page:
 - [tutorials/00_SETUP/](tutorials/00_SETUP/README.MD): pre-course setup and first checks
 - [tutorials/DAY 1 - Brightway Foundations/](tutorials/DAY%201%20-%20Brightway%20Foundations/README.MD): Python/Jupyter refresher plus core `brightway` work
 - [tutorials/DAY 2 - Brightway and Activity Browser Part I/](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/README.MD): `ecoinvent` import and the first `Activity Browser` block
-- [tutorials/DAY 3 - Premise and Activity Browser Part II/](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/README.MD): `premise` and scenario comparison
+- [tutorials/DAY 3 - Premise and Activity Browser Part II/](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/README.MD): `premise`, scenario comparison, and the second `Activity Browser` block
 - [tutorials/DAY 4 - Edges and Trails/](tutorials/DAY%204%20-%20Edges%20and%20Trails/README.MD): compressed `edges` sequence plus optional `trails`
 - [tutorials/OPTIONAL/](tutorials/OPTIONAL/README.MD): advanced or reference notebooks not in the core path
 - [READING_MATERIAL.md](READING_MATERIAL.md): suggested background reading
