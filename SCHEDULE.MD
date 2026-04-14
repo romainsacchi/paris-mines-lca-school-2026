@@ -32,22 +32,22 @@ Welcome, setup check, course roadmap, Python/Jupyter refresher
 ### 10:30 - 11:00
 Coffee break
 
-### 11:00 - 13:00
+### 11:00 - 12:00
 Manual matrix LCA, first LCA, and BAFU import
 - [D1-03 Manual LCA with NumPy matrices - Heijungs and Suh 2002 vs Brightway](tutorials/DAY%201%20-%20Brightway%20Foundations/D1-03%20Manual%20LCA%20with%20NumPy%20matrices%20-%20Heijungs%20and%20Suh%202002%20vs%20Brightway.ipynb)
 - [D1-04 First LCA from demand to score in Brightway](tutorials/DAY%201%20-%20Brightway%20Foundations/D1-04%20First%20LCA%20from%20demand%20to%20score%20in%20Brightway.ipynb)
 
-### 13:00 - 15:00
+### 12:00 - 13:00
 Lunch break
 
-### 15:00 - 16:30
+### 13:00 - 14:30
 Uncertainty and Monte Carlo
 - [D1-05 Uncertainty and Monte Carlo basics](tutorials/DAY%201%20-%20Brightway%20Foundations/D1-05%20Uncertainty%20and%20Monte%20Carlo%20basics.ipynb)
 
-### 16:30 - 17:00
+### 14:30 - 15:00
 Coffee break
 
-### 17:00 - 19:00
+### 15:00 - 17:00
 Data QA, linking workflow, and contribution analysis
 - [D1-06 Data quality checks and linking workflow](tutorials/DAY%201%20-%20Brightway%20Foundations/D1-06%20Data%20quality%20checks%20and%20linking%20workflow.ipynb)
 - [D1-07 Contribution analysis and result visualization](tutorials/DAY%201%20-%20Brightway%20Foundations/D1-07%20Contribution%20analysis%20and%20result%20visualization.ipynb)
@@ -64,21 +64,21 @@ Return to the shared project, import `ecoinvent 3.12 cutoff`, and check the data
 ### 10:30 - 11:00
 Coffee break
 
-### 11:00 - 13:00
+### 11:00 - 12:00
 Inspect imported activities, rerun one compact LCA, and prepare the project for the GUI module
 - [D2-01 ecoinvent import and Brightway recap](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/D2-01%20ecoinvent%20import%20and%20Brightway%20recap.ipynb)
 
-### 13:00 - 15:00
+### 12:00 - 13:00
 Lunch break
 
-### 15:00 - 16:30
+### 13:00 - 14:30
 Activity Browser Part I: parameterisation, Monte Carlo, and GSA
 - [AB-01 Activity Browser Part I handout](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/AB-01%20Activity%20Browser%20Part%20I%20handout.md)
 
-### 16:30 - 17:00
+### 14:30 - 15:00
 Coffee break
 
-### 17:00 - 19:00
+### 15:00 - 17:00
 Activity Browser Part I continued
 - [AB-01 Activity Browser Part I handout](tutorials/DAY%202%20-%20Brightway%20and%20Activity%20Browser%20Part%20I/AB-01%20Activity%20Browser%20Part%20I%20handout.md)
 
@@ -95,21 +95,21 @@ Start generating prospective databases with `premise`
 Premise introduction lecture: IAMs, scenarios, and prospective LCA workflow
 - [paris_premise_intro_06_05_2026.pdf](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/paris_premise_intro_06_05_2026.pdf)
 
-### 11:00 - 13:00
+### 11:00 - 12:00
 Continue `premise` generation, checks, and datapackage export
 - [D3-01 Generating prospective databases with premise](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-01%20Generating%20prospective%20databases%20with%20premise.ipynb)
 
-### 13:00 - 15:00
+### 12:00 - 13:00
 Lunch break
 
-### 15:00 - 16:30
+### 13:00 - 14:30
 Inspect and compare generated outputs in Brightway
 - [D3-02 Inspecting and comparing premise outputs in Brightway](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/D3-02%20Inspecting%20and%20comparing%20premise%20outputs%20in%20Brightway.ipynb)
 
-### 16:30 - 17:00
+### 14:30 - 15:00
 Coffee break
 
-### 17:00 - 19:00
+### 15:00 - 17:00
 Activity Browser Part II: compare prospective scenarios
 - [AB-02 Activity Browser Part II handout](tutorials/DAY%203%20-%20Premise%20and%20Activity%20Browser%20Part%20II/AB-02%20Activity%20Browser%20Part%20II%20handout.md)
 
@@ -128,25 +128,25 @@ Introduction to the `edges` workflow and API
 ### 10:30 - 11:00
 Coffee break
 
-### 11:00 - 13:00
+### 11:00 - 12:00
 AWARE and biodiversity examples with regionalised methods
 - [D4-03 AWARE and biodiversity with regionalised methods](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-03%20AWARE%20and%20biodiversity%20with%20regionalised%20methods.ipynb)
 
-### 13:00 - 15:00
+### 12:00 - 13:00
 Lunch break
 
-### 15:00 - 16:00
+### 13:00 - 14:00
 Inventory flow assessment I
 - [D4-04 Inventory flow assessment I - tracing intermediates](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-04%20Inventory%20flow%20assessment%20I%20-%20tracing%20intermediates.ipynb)
 
-### 16:00 - 16:15
+### 14:00 - 14:15
 Coffee break
 
-### 16:15 - 17:15
+### 14:15 - 15:15
 Inventory flow assessment II
 - [D4-05 Inventory flow assessment II - criticality factors](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-05%20Inventory%20flow%20assessment%20II%20-%20criticality%20factors.ipynb)
 
-### 17:15 - 19:00
+### 15:15 - 17:00
 Optional `trails` reserve block, if group progress allows
 - [D4-06 Optional Trails - simple numerical example](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-06%20Optional%20Trails%20-%20simple%20numerical%20example.ipynb)
 - [D4-07 Optional Trails - generate a data package from premise outputs](tutorials/DAY%204%20-%20Edges%20and%20Trails/D4-07%20Optional%20Trails%20-%20generate%20a%20data%20package%20from%20premise%20outputs.ipynb)
