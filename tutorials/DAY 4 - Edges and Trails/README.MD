@@ -7,6 +7,9 @@ Core Day 4 material:
 1. `D4-01 Edges fundamentals and exchange-based characterization.ipynb`
 2. `D4-02 Introduction to edges workflow and API.ipynb`
 3. `D4-03 AWARE and biodiversity with regionalised methods.ipynb`
+   Companion notes:
+   `D4-03 AWARE2.0 reference note.MD`
+   `D4-03 IBIF reference note.MD`
 4. `D4-04 Inventory flow assessment I - tracing intermediates.ipynb`
 5. `D4-05 Inventory flow assessment II - criticality factors.ipynb`
 
