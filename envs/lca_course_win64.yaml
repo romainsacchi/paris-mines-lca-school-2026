@@ -46,6 +46,7 @@ dependencies:
   - pypardiso
   - premise
   - edges
+  - conda-forge::pyside6=6.9.3
   - lca::activity-browser
   - pip<26
   - setuptools<81
