@@ -9,6 +9,9 @@ The references below are formatted in APA style using publisher or DOI metadata.
 
 1. Mutel, C., 2017. Brightway: An open source framework for Life Cycle Assessment. J. Open Source Softw. 2, 236. https://doi.org/10.21105/joss.00236
 
+### Activity Browser
+
+1. Steubing, B.; de Koning, D.; Haas, A.; Mutel, C. L., The Activity Browser — An open source LCA software building on top of the brightway framework. Software Impacts 2020, 3, 100012. https://doi.org/10.1016/j.simpa.2019.100012
 ### Edges and Regionalized LCIA
 
 2. Sacchi, R., Menacho, A. H., Seitfudem, G., Agez, M., Schlesinger-Martinat, J., Koyamparambath, A., Saldivar, J. S., Loubet, P., & Bauer, C. (2025). Contextual LCIA without the overhead: an exchange-based framework for flexible impact assessment. *The International Journal of Life Cycle Assessment, 30*(12), 3087-3101. https://doi.org/10.1007/s11367-025-02551-7
