@@ -1,24 +1,34 @@
-name: test-windows-env
+name: test-conda-envs
 
 on:
   push:
   pull_request:
 
 jobs:
-  test-env-win:
-    runs-on: windows-latest
+  test-env:
+    name: Test on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            env_file: envs/lca_course_win64.yaml
+          - os: macos-latest
+            env_file: envs/lca_course_osxARM.yaml
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-      - uses: conda-incubator/setup-miniconda@v3
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v3
         with:
-          activate-environment: test-env
           auto-update-conda: true
-          python-version: "3.11"
-          channels: conda-forge,defaults
           auto-activate-base: false
+          channels: conda-forge,defaults
 
-      - name: Create env from file
+      - name: Create environment
         shell: bash
         run: |
-          conda env create -f lca_course_win64.yaml
+          conda env create -f "${{ matrix.env_file }}"
