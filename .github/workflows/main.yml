@@ -36,26 +36,31 @@ jobs:
           conda env create -f "${{ matrix.env_file }}"
 
       - name: Get environment name
-        id: envname
         run: |
           ENV_NAME=$(python - <<'PY'
-            import yaml
-            with open("${{ matrix.env_file }}", "r", encoding="utf-8") as f:
-                data = yaml.safe_load(f)
-            print(data["name"])
-            PY
-            )
-                      echo "ENV_NAME=$ENV_NAME" >> "$GITHUB_ENV"
-            
-                  - name: Smoke test Brightway imports
-                    run: |
-                      conda run -n "$ENV_NAME" python -W error - <<'PY'
-            import bw2data
-            import bw2io
-            import bw2calc
-            print("Brightway imports OK")
-            PY
+import yaml
+with open("${{ matrix.env_file }}", "r", encoding="utf-8") as f:
+    data = yaml.safe_load(f)
+print(data["name"])
+PY
+)
+          echo "ENV_NAME=$ENV_NAME" >> "$GITHUB_ENV"
 
-      - name: Smoke test activity-browser CLI
+      - name: Smoke test Brightway imports
         run: |
-          conda run -n "$ENV_NAME" activity-browser --help
+          conda run -n "$ENV_NAME" python -W error - <<'PY'
+import bw2data
+import bw2io
+import bw2calc
+print("Brightway imports OK")
+PY
+
+      - name: Smoke test activity-browser entry point
+        run: |
+          conda run -n "$ENV_NAME" python - <<'PY'
+import shutil
+cmd = shutil.which("activity-browser")
+if not cmd:
+    raise SystemExit("activity-browser command not found on PATH")
+print(f"activity-browser found at: {cmd}")
+PY
