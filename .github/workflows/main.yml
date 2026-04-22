@@ -17,8 +17,10 @@ jobs:
         include:
           - os: windows-latest
             env_file: envs/lca_course_win64.yaml
+            env_name: lca-course
           - os: macos-latest
             env_file: envs/lca_course_osxARM.yaml
+            env_name: lca-course
 
     steps:
       - name: Check out repository
@@ -35,20 +37,9 @@ jobs:
         run: |
           conda env create -f "${{ matrix.env_file }}"
 
-      - name: Get environment name
-        run: |
-          ENV_NAME=$(python - <<'PY'
-          import yaml
-          with open("${{ matrix.env_file }}", "r", encoding="utf-8") as f:
-              data = yaml.safe_load(f)
-          print(data["name"])
-          PY
-          )
-          echo "ENV_NAME=$ENV_NAME" >> "$GITHUB_ENV"
-
       - name: Smoke test Brightway imports
         run: |
-          conda run -n "$ENV_NAME" python -W error - <<'PY'
+          conda run -n "${{ matrix.env_name }}" python -W error - <<'PY'
           import bw2data
           import bw2io
           import bw2calc
@@ -57,7 +48,7 @@ jobs:
 
       - name: Smoke test activity-browser entry point
         run: |
-          conda run -n "$ENV_NAME" python - <<'PY'
+          conda run -n "${{ matrix.env_name }}" python - <<'PY'
           import shutil
           cmd = shutil.which("activity-browser")
           if not cmd:

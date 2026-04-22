@@ -46,6 +46,7 @@ dependencies:
   - pypardiso
   - premise
   - edges
+  - lca::activity-browser
   - pip<26
   - setuptools<81
   - pip:
@@ -54,6 +55,6 @@ dependencies:
       - bw_simapro_csv
       - git+https://github.com/romainsacchi/d3blocks.git
       - polyviz
-      - activity-browser
+      - PySide6==6.9.3
 variables:
   PYTHONNOUSERSITE: "1"
