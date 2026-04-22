@@ -119,7 +119,30 @@ conda env list
 
 You should see `lca-course` in the list.
 
-## 4) Activate `lca-course`
+## 4) Install the Activity Browser
+
+Please install the beta version of the AB, following the official installation guide here:
+https://lca-activitybrowser.github.io/activity-browser/getting-started/installation.html
+
+This will create a _separate_ environment called `ab_beta`. For this course we recommend the `conda` based installation so both environments are managed via conda. 
+
+Once installed, you can activate the AB by typing 
+```bash 
+conda activate ab_beta
+```
+
+Then start the AB 
+```bash 
+activity-browser
+``` 
+
+Close the AB and type 
+```bash 
+conda deactivate
+``` 
+to deactivate the environment. Alternatively, you can keep the AB open and open another terminal to continue.
+    
+## 5) Activate `lca-course`
 
 Activate in the same shell:
 
@@ -127,7 +150,7 @@ Activate in the same shell:
 conda activate lca-course
 ```
 
-## 5) Create a repo-root `.env` file
+## 6) Create a repo-root `.env` file
 
 If you are still in `envs/`, go back to the repository root first.
 
@@ -144,19 +167,13 @@ You can also start from `.env.example`.
 The Day 2, Day 3, and optional Day 4 notebooks load this file automatically with `python-dotenv`.
 The `.env` file is ignored by Git and should stay local.
 
-## 6) Run quick import checks
+## 7) Run quick import checks
 
 Still in the activated `lca-course` environment:
 
 ```bash
 python --version
 python -c "import bw2data, bw2calc, bw2io, premise; print('Core imports: OK')"
-```
-
-If you want to check `activity browser` too:
-
-```bash
-activity-browser
 ```
 
 ### Apple Silicon note about the sparse solver warning
@@ -177,7 +194,7 @@ python -c "import scikits.umfpack; print('UMFPACK import: OK')"
 
 If the environment is still inconsistent, recreate it from the YAML file.
 
-## 7) Confirm the bundled BAFU workbook is present
+## 8) Confirm the bundled BAFU workbook is present
 
 From the repository root:
 
@@ -187,7 +204,7 @@ ls data/lci-bafu.xlsx
 
 If the file exists, you do not need any separate BAFU download before the course.
 
-## 8) Start Jupyter Lab and run the setup notebook
+## 9) Start Jupyter Lab and run the setup notebook
 
 From the repository root:
 
@@ -199,7 +216,7 @@ jupyter lab
 Then open:
 - `tutorials/00_SETUP/00 - Setup and First Checks.ipynb`
 
-## 9) Before the course starts
+## 10) Before the course starts
 
 Please complete:
 - [READING_MATERIAL.md](READING_MATERIAL.md)
