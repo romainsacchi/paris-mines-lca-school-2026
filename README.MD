@@ -87,7 +87,7 @@ BAFU reference page:
 Before the course:
 
 1. Follow [INSTRUCTIONS.MD](INSTRUCTIONS.MD).
-2. Create and activate the `lca-course` conda environment.
+2. Create and activate the `lca-course` environment. Use the Miniforge/conda route if possible, or the venv/pip route if your institution does not allow conda.
 3. Run [tutorials/00_SETUP/00 - Setup and First Checks.ipynb](tutorials/00_SETUP/00%20-%20Setup%20and%20First%20Checks.ipynb).
 
 During the course:
@@ -97,11 +97,17 @@ During the course:
 
 ## Software
 
-Core environment files are in `envs/`:
+Core environment files are in `envs/`.
+
+Recommended Miniforge/conda files:
 - `lca_course_osxARM.yaml` for macOS Apple Silicon
 - `lca_course_win64.yaml` for Windows
 
-Both install the same shared `lca-course` environment used for notebooks and `Activity Browser`.
+Alternate venv/pip files for participants who cannot use conda:
+- `requirements_venv.txt` for the notebook environment, including optional `trails` and visualization packages
+- `requirements_activity_browser_venv.txt` for the separate Activity Browser environment
+
+See [INSTRUCTIONS.MD](INSTRUCTIONS.MD) for the exact commands.
 
 ## Teaching Staff
 

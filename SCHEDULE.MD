@@ -12,8 +12,26 @@ Complete:
 
 ## How to open the notebooks
 
+From the repository root, activate the course environment first.
+
+Miniforge / conda:
+
 ```bash
 conda activate lca-course
+jupyter lab
+```
+
+venv / pip on macOS or Linux:
+
+```bash
+source .venv-lca-course/bin/activate
+jupyter lab
+```
+
+venv / pip on Windows PowerShell:
+
+```powershell
+.\.venv-lca-course\Scripts\Activate.ps1
 jupyter lab
 ```
 

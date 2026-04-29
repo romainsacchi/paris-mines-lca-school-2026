@@ -3,7 +3,7 @@
 Run `00 - Setup and First Checks.ipynb` before Day 1.
 
 The setup notebook verifies:
-- that the active kernel is the shared `lca-course` environment
+- that the active kernel is the `lca-course` environment, created either with conda or with venv/pip
 - that the core Python packages import correctly
 - that the bundled BAFU workbook is present
 

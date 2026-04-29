@@ -3,6 +3,8 @@
 .ipynb_checkpoints/
 __pycache__/
 .env
+.venv-lca-course/
+.venv-ab-beta/
 
 # Generated course outputs
 export/
